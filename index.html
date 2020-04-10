@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gobang</title>
+  <link rel="stylesheet" href="src/client/style.css">
+  <script src="node_modules/socket.io-client/dist/socket.io.js"></script>
+  <script src="src/client/index.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- broadcast message -->
+    <h1 class="message hidden">
+      <span></span>
+      <span>wins !</span>
+    </h1>
+    <!-- board -->
+    <canvas width="600" height="600">
+      Canvas not supported!
+    </canvas>
+    <!-- scoreboard -->
+    <div class="panel hidden">
+      <section class="villain">
+        <h2 class="name"><em>player 1</em></h2>
+        <p class="score">0</p>
+        <button class="piece hidden"></button>
+      </section>
+      
+      <button class="new-game hidden">New Game</button>
+
+      <section class="hero">
+        <button class="piece hidden"></button>
+        <p class="score">0</p>
+        <h2 class="name"><em>player 2</em></h2>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>
