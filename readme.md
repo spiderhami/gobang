@@ -15,7 +15,7 @@ $ npm install
 $ npm run server
 ```
 
-* Run the client page "index.html" any way you like
+* Run the client page "index.html" any way you like (on 2 devices/browsers)
 
 ## Screenshot
 
